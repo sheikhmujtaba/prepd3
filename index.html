@@ -1,0 +1,21 @@
+ <html>
+<head>
+    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+    </head>
+<body>
+    <script type="text/javascript">
+        d3.select("body").append("h1").text("D3 Algorithms");
+        d3.select("body").append("h2").text("Select Command");
+        d3.select("body").append("p").text("The select command selects the specific part of the html that we specify within the select tag. Moreover, if we use the select all tag it selects every single element that is identified within the select all tag. ");
+           d3.select("body").append("h2").text("Append Command");
+        d3.select("body").append("p").text("The append command generates the element that we define within the append command. For example, if we type append(“p”) this will create a paragraph for us.");
+        d3.select("body").append("h2").text("Text Command");
+        d3.select("body").append("p").text("The text commands add the strings or the components within the text command into the element that the text command is being used for. For example, if we wrote append(“p”).text(“work”) this will add the text into the paragraph that we created. ");
+        d3.select("body").append("h2").text("Style Commands");
+         d3.select("body").append("p").text("By using the style command, we can add CSS to our html by using JavaScript instead of creating another CSS file. We can change the font size and other different CSS properties by using the style tags in our JavaScript.  ");
+        d3.select("body").selectAll("p").style("color", "red");
+        d3.select("body").selectAll("p").style("font-size", "30px");
+    </script>
+    
+</body>
+</html>    
